@@ -1,0 +1,233 @@
+{
+  "screen_directory": "/home/boni/projects/MineStudio/output/stone_acquisition/behavioral_screens/20260919T111059Z",
+  "episodes_per_policy": {
+    "normal": 40,
+    "hazard": 60,
+    "combined": 100
+  },
+  "paired": true,
+  "system2_protocol": "frozen event-driven Gemini task bank; no live planner calls",
+  "policies": [
+    {
+      "policy": "vanilla",
+      "normal_success_rate": 0.475,
+      "hazard_success_rate": 0.3,
+      "combined_success_rate": 0.37,
+      "water_entry_rate": 0.68,
+      "success_given_entered_water": 0.27941176470588236,
+      "successful_water_exit_rate": 0.9852941176470589,
+      "stone_reacquisition_after_water_rate": 0.3235294117647059,
+      "timeout_after_water_rate": 0.7205882352941176,
+      "death_rate": 0.0,
+      "mean_steps": 998.13,
+      "versus_vanilla": {
+        "success_rate_difference": 0.0,
+        "paired_bootstrap_95_ci": [
+          0.0,
+          0.0
+        ],
+        "mcnemar": {
+          "baseline_only": 0,
+          "candidate_only": 0,
+          "discordant": 0,
+          "exact_p_value": 1.0
+        }
+      }
+    },
+    {
+      "policy": "upper_lora_r8_step800",
+      "normal_success_rate": 0.525,
+      "hazard_success_rate": 0.3,
+      "combined_success_rate": 0.39,
+      "water_entry_rate": 0.68,
+      "success_given_entered_water": 0.2647058823529412,
+      "successful_water_exit_rate": 0.9705882352941176,
+      "stone_reacquisition_after_water_rate": 0.3235294117647059,
+      "timeout_after_water_rate": 0.7352941176470589,
+      "death_rate": 0.0,
+      "mean_steps": 955.39,
+      "versus_vanilla": {
+        "success_rate_difference": 0.020000000000000018,
+        "paired_bootstrap_95_ci": [
+          -0.09,
+          0.13
+        ],
+        "mcnemar": {
+          "baseline_only": 16,
+          "candidate_only": 18,
+          "discordant": 34,
+          "exact_p_value": 0.8641662404406816
+        }
+      }
+    },
+    {
+      "policy": "upper_lora_r8_step1600",
+      "normal_success_rate": 0.4,
+      "hazard_success_rate": 0.3333333333333333,
+      "combined_success_rate": 0.36,
+      "water_entry_rate": 0.68,
+      "success_given_entered_water": 0.29411764705882354,
+      "successful_water_exit_rate": 0.9558823529411765,
+      "stone_reacquisition_after_water_rate": 0.3382352941176471,
+      "timeout_after_water_rate": 0.7058823529411765,
+      "death_rate": 0.0,
+      "mean_steps": 976.97,
+      "versus_vanilla": {
+        "success_rate_difference": -0.010000000000000009,
+        "paired_bootstrap_95_ci": [
+          -0.13,
+          0.11
+        ],
+        "mcnemar": {
+          "baseline_only": 21,
+          "candidate_only": 20,
+          "discordant": 41,
+          "exact_p_value": 1.0
+        }
+      }
+    },
+    {
+      "policy": "upper_lora_r8_step3200",
+      "normal_success_rate": 0.625,
+      "hazard_success_rate": 0.36666666666666664,
+      "combined_success_rate": 0.47,
+      "water_entry_rate": 0.66,
+      "success_given_entered_water": 0.3484848484848485,
+      "successful_water_exit_rate": 0.9545454545454546,
+      "stone_reacquisition_after_water_rate": 0.3787878787878788,
+      "timeout_after_water_rate": 0.6515151515151515,
+      "death_rate": 0.0,
+      "mean_steps": 919.21,
+      "versus_vanilla": {
+        "success_rate_difference": 0.09999999999999998,
+        "paired_bootstrap_95_ci": [
+          -0.03,
+          0.22
+        ],
+        "mcnemar": {
+          "baseline_only": 16,
+          "candidate_only": 26,
+          "discordant": 42,
+          "exact_p_value": 0.16414940178310644
+        }
+      }
+    },
+    {
+      "policy": "upper_lora_r8_step4800",
+      "normal_success_rate": 0.75,
+      "hazard_success_rate": 0.5333333333333333,
+      "combined_success_rate": 0.62,
+      "water_entry_rate": 0.68,
+      "success_given_entered_water": 0.5,
+      "successful_water_exit_rate": 0.9264705882352942,
+      "stone_reacquisition_after_water_rate": 0.5441176470588235,
+      "timeout_after_water_rate": 0.5,
+      "death_rate": 0.0,
+      "mean_steps": 811.78,
+      "versus_vanilla": {
+        "success_rate_difference": 0.25,
+        "paired_bootstrap_95_ci": [
+          0.12,
+          0.37
+        ],
+        "mcnemar": {
+          "baseline_only": 11,
+          "candidate_only": 36,
+          "discordant": 47,
+          "exact_p_value": 0.000346001140314911
+        }
+      }
+    },
+    {
+      "policy": "upper_lora_r8_step6400",
+      "normal_success_rate": 0.8,
+      "hazard_success_rate": 0.35,
+      "combined_success_rate": 0.53,
+      "water_entry_rate": 0.68,
+      "success_given_entered_water": 0.3382352941176471,
+      "successful_water_exit_rate": 0.8823529411764706,
+      "stone_reacquisition_after_water_rate": 0.39705882352941174,
+      "timeout_after_water_rate": 0.6617647058823529,
+      "death_rate": 0.0,
+      "mean_steps": 845.41,
+      "versus_vanilla": {
+        "success_rate_difference": 0.16000000000000003,
+        "paired_bootstrap_95_ci": [
+          0.05,
+          0.27
+        ],
+        "mcnemar": {
+          "baseline_only": 8,
+          "candidate_only": 24,
+          "discordant": 32,
+          "exact_p_value": 0.0070003666914999485
+        }
+      }
+    },
+    {
+      "policy": "upper_lora_r32_step6400",
+      "normal_success_rate": 0.75,
+      "hazard_success_rate": 0.6,
+      "combined_success_rate": 0.66,
+      "water_entry_rate": 0.67,
+      "success_given_entered_water": 0.582089552238806,
+      "successful_water_exit_rate": 0.9253731343283582,
+      "stone_reacquisition_after_water_rate": 0.6716417910447762,
+      "timeout_after_water_rate": 0.417910447761194,
+      "death_rate": 0.0,
+      "mean_steps": 772.55,
+      "versus_vanilla": {
+        "success_rate_difference": 0.29000000000000004,
+        "paired_bootstrap_95_ci": [
+          0.17,
+          0.41
+        ],
+        "mcnemar": {
+          "baseline_only": 7,
+          "candidate_only": 36,
+          "discordant": 43,
+          "exact_p_value": 8.963039363152348e-06
+        }
+      }
+    },
+    {
+      "policy": "recurrent_upper_lora_step6400",
+      "normal_success_rate": 0.65,
+      "hazard_success_rate": 0.4666666666666667,
+      "combined_success_rate": 0.54,
+      "water_entry_rate": 0.69,
+      "success_given_entered_water": 0.43478260869565216,
+      "successful_water_exit_rate": 0.8840579710144928,
+      "stone_reacquisition_after_water_rate": 0.5072463768115942,
+      "timeout_after_water_rate": 0.5652173913043478,
+      "death_rate": 0.0,
+      "mean_steps": 853.08,
+      "versus_vanilla": {
+        "success_rate_difference": 0.17000000000000004,
+        "paired_bootstrap_95_ci": [
+          0.06,
+          0.28
+        ],
+        "mcnemar": {
+          "baseline_only": 10,
+          "candidate_only": 27,
+          "discordant": 37,
+          "exact_p_value": 0.007632078602910042
+        }
+      }
+    }
+  ],
+  "learned_ranking": [
+    "upper_lora_r32_step6400",
+    "upper_lora_r8_step4800",
+    "recurrent_upper_lora_step6400",
+    "upper_lora_r8_step6400",
+    "upper_lora_r8_step3200",
+    "upper_lora_r8_step800",
+    "upper_lora_r8_step1600"
+  ],
+  "selected_top_two": [
+    "upper_lora_r32_step6400",
+    "upper_lora_r8_step4800"
+  ]
+}

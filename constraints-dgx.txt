@@ -1,0 +1,9 @@
+torch==2.11.0+cu130
+torchvision==0.26.0+cu130
+torchaudio==2.11.0+cu130
+triton==3.6.0
+cuda-toolkit==13.0.2
+numpy==2.3.5
+opencv-python==4.13.0.92
+opencv-python-headless==4.13.0.92
+av==17.0.1

@@ -1,0 +1,397 @@
+{
+  "schema_version": 1,
+  "run_id": "20260920T172905Z",
+  "reference": "Upper LoRA r32 step 6400 + old router + old pickup",
+  "candidate_checkpoint": "/home/boni/projects/MineStudio/output/system1_recovery_ppo/20260920T172905Z/candidate_models/iteration_0010",
+  "training": {
+    "status": "completed",
+    "run_id": "20260920T172905Z",
+    "completed_training_iterations": 20,
+    "last_persisted_iteration": 19,
+    "stop_reason": "behavioral_plateau_after_iteration_10_peak",
+    "baseline_evaluation": {
+      "iteration": 0,
+      "micro": {
+        "RECOVER_CAMERA": {
+          "episodes": 10,
+          "successes": 0,
+          "success_rate": 0.0
+        },
+        "AVOID_DIGGING_TRAP": {
+          "episodes": 10,
+          "successes": 0,
+          "success_rate": 0.0
+        },
+        "REACQUIRE_STONE": {
+          "episodes": 10,
+          "successes": 4,
+          "success_rate": 0.4
+        },
+        "CLIMB_SHORE": {
+          "episodes": 10,
+          "successes": 2,
+          "success_rate": 0.2
+        },
+        "ESCAPE_HOLE": {
+          "episodes": 10,
+          "successes": 1,
+          "success_rate": 0.1
+        },
+        "AVOID_WATER": {
+          "episodes": 10,
+          "successes": 1,
+          "success_rate": 0.1
+        }
+      },
+      "weak_mean": 0.13333333333333333,
+      "normal_stone": {
+        "episodes": 20,
+        "successes": 14,
+        "success_rate": 0.7
+      },
+      "created_at": "2026-09-20T18:29:48.708884+00:00"
+    },
+    "best": {
+      "iteration": 10,
+      "score": 0.575,
+      "evaluation": {
+        "iteration": 10,
+        "micro": {
+          "RECOVER_CAMERA": {
+            "episodes": 10,
+            "successes": 0,
+            "success_rate": 0.0
+          },
+          "AVOID_DIGGING_TRAP": {
+            "episodes": 10,
+            "successes": 0,
+            "success_rate": 0.0
+          },
+          "REACQUIRE_STONE": {
+            "episodes": 10,
+            "successes": 6,
+            "success_rate": 0.6
+          },
+          "CLIMB_SHORE": {
+            "episodes": 10,
+            "successes": 2,
+            "success_rate": 0.2
+          },
+          "ESCAPE_HOLE": {
+            "episodes": 10,
+            "successes": 2,
+            "success_rate": 0.2
+          },
+          "AVOID_WATER": {
+            "episodes": 10,
+            "successes": 2,
+            "success_rate": 0.2
+          }
+        },
+        "weak_mean": 0.19999999999999998,
+        "normal_stone": {
+          "episodes": 20,
+          "successes": 15,
+          "success_rate": 0.75
+        },
+        "created_at": "2026-09-20T20:57:35.203636+00:00"
+      },
+      "checkpoint_directory": "/home/boni/projects/MineStudio/output/system1_recovery_ppo/20260920T172905Z/candidate_models/iteration_0010"
+    },
+    "evaluated_iterations": [
+      0,
+      5,
+      10,
+      15
+    ],
+    "discarded_partial_evaluation_iteration": 20,
+    "training_seconds": 5383.0384253190205,
+    "reference_checkpoint": "/home/boni/projects/MineStudio/output/stone_recovery_bc/architecture_sweeps/20260917T213751Z/upper_lora_rank32/best_model",
+    "training_curve": "/home/boni/projects/MineStudio/output/system1_recovery_ppo/20260920T172905Z/metrics.jsonl"
+  },
+  "micro_benchmarks": {
+    "EXIT_WATER": {
+      "episodes": 50,
+      "baseline_successes": 49,
+      "candidate_successes": 46,
+      "baseline_success_rate": 0.98,
+      "candidate_success_rate": 0.92,
+      "difference": -0.06,
+      "paired_bootstrap_95_ci": [
+        -0.16,
+        0.02
+      ],
+      "mcnemar": {
+        "baseline_only": 4,
+        "candidate_only": 1,
+        "discordant": 5,
+        "exact_p_value": 0.375
+      }
+    },
+    "CLIMB_SHORE": {
+      "episodes": 50,
+      "baseline_successes": 5,
+      "candidate_successes": 5,
+      "baseline_success_rate": 0.1,
+      "candidate_success_rate": 0.1,
+      "difference": 0.0,
+      "paired_bootstrap_95_ci": [
+        -0.1,
+        0.1
+      ],
+      "mcnemar": {
+        "baseline_only": 3,
+        "candidate_only": 3,
+        "discordant": 6,
+        "exact_p_value": 1.0
+      }
+    },
+    "REACQUIRE_STONE": {
+      "episodes": 50,
+      "baseline_successes": 15,
+      "candidate_successes": 17,
+      "baseline_success_rate": 0.3,
+      "candidate_success_rate": 0.34,
+      "difference": 0.04,
+      "paired_bootstrap_95_ci": [
+        -0.1,
+        0.18
+      ],
+      "mcnemar": {
+        "baseline_only": 6,
+        "candidate_only": 8,
+        "discordant": 14,
+        "exact_p_value": 0.79052734375
+      }
+    },
+    "ESCAPE_HOLE": {
+      "episodes": 50,
+      "baseline_successes": 4,
+      "candidate_successes": 4,
+      "baseline_success_rate": 0.08,
+      "candidate_success_rate": 0.08,
+      "difference": 0.0,
+      "paired_bootstrap_95_ci": [
+        -0.1,
+        0.1
+      ],
+      "mcnemar": {
+        "baseline_only": 3,
+        "candidate_only": 3,
+        "discordant": 6,
+        "exact_p_value": 1.0
+      }
+    },
+    "AVOID_DIGGING_TRAP": {
+      "episodes": 50,
+      "baseline_successes": 0,
+      "candidate_successes": 0,
+      "baseline_success_rate": 0.0,
+      "candidate_success_rate": 0.0,
+      "difference": 0.0,
+      "paired_bootstrap_95_ci": [
+        0.0,
+        0.0
+      ],
+      "mcnemar": {
+        "baseline_only": 0,
+        "candidate_only": 0,
+        "discordant": 0,
+        "exact_p_value": 1.0
+      }
+    },
+    "RECOVER_CAMERA": {
+      "episodes": 50,
+      "baseline_successes": 0,
+      "candidate_successes": 0,
+      "baseline_success_rate": 0.0,
+      "candidate_success_rate": 0.0,
+      "difference": 0.0,
+      "paired_bootstrap_95_ci": [
+        0.0,
+        0.0
+      ],
+      "mcnemar": {
+        "baseline_only": 0,
+        "candidate_only": 0,
+        "discordant": 0,
+        "exact_p_value": 1.0
+      }
+    },
+    "AVOID_WATER": {
+      "episodes": 50,
+      "baseline_successes": 2,
+      "candidate_successes": 5,
+      "baseline_success_rate": 0.04,
+      "candidate_success_rate": 0.1,
+      "difference": 0.06,
+      "paired_bootstrap_95_ci": [
+        -0.02,
+        0.16
+      ],
+      "mcnemar": {
+        "baseline_only": 1,
+        "candidate_only": 4,
+        "discordant": 5,
+        "exact_p_value": 0.375
+      }
+    }
+  },
+  "stone": {
+    "normal": {
+      "episodes": 40,
+      "baseline_successes": 30,
+      "candidate_successes": 29,
+      "baseline_success_rate": 0.75,
+      "candidate_success_rate": 0.725,
+      "difference": -0.025,
+      "paired_bootstrap_95_ci": [
+        -0.175,
+        0.125
+      ],
+      "mcnemar": {
+        "baseline_only": 5,
+        "candidate_only": 4,
+        "discordant": 9,
+        "exact_p_value": 1.0
+      }
+    },
+    "hazard": {
+      "episodes": 60,
+      "baseline_successes": 36,
+      "candidate_successes": 25,
+      "baseline_success_rate": 0.6,
+      "candidate_success_rate": 0.4166666666666667,
+      "difference": -0.18333333333333332,
+      "paired_bootstrap_95_ci": [
+        -0.3333333333333333,
+        -0.03333333333333333
+      ],
+      "mcnemar": {
+        "baseline_only": 17,
+        "candidate_only": 6,
+        "discordant": 23,
+        "exact_p_value": 0.03468966484069824
+      }
+    },
+    "combined": {
+      "episodes": 100,
+      "baseline_successes": 66,
+      "candidate_successes": 54,
+      "baseline_success_rate": 0.66,
+      "candidate_success_rate": 0.54,
+      "difference": -0.12,
+      "paired_bootstrap_95_ci": [
+        -0.23,
+        -0.01
+      ],
+      "mcnemar": {
+        "baseline_only": 22,
+        "candidate_only": 10,
+        "discordant": 32,
+        "exact_p_value": 0.050102459732443094
+      }
+    }
+  },
+  "gemini_residual_failures": {
+    "critiques": 273,
+    "label_counts": {
+      "bad_camera_orientation": 175,
+      "failed_hole_escape": 59,
+      "failed_shore_climb": 36,
+      "failed_stone_reacquisition": 67,
+      "mined_into_trap": 81,
+      "other": 1,
+      "stuck_no_progress": 157,
+      "successful_partial_recovery": 13,
+      "target_lost": 67,
+      "unnecessary_water_entry": 41,
+      "water_oscillation": 3,
+      "wrong_exit_direction": 2
+    },
+    "by_task": {
+      "EXIT_WATER": {
+        "critiques": 4,
+        "label_counts": {
+          "bad_camera_orientation": 4,
+          "failed_shore_climb": 1,
+          "stuck_no_progress": 3
+        }
+      },
+      "CLIMB_SHORE": {
+        "critiques": 45,
+        "label_counts": {
+          "bad_camera_orientation": 24,
+          "failed_hole_escape": 1,
+          "failed_shore_climb": 35,
+          "mined_into_trap": 3,
+          "other": 1,
+          "stuck_no_progress": 35,
+          "successful_partial_recovery": 13,
+          "target_lost": 6,
+          "unnecessary_water_entry": 2,
+          "water_oscillation": 3,
+          "wrong_exit_direction": 2
+        }
+      },
+      "REACQUIRE_STONE": {
+        "critiques": 33,
+        "label_counts": {
+          "bad_camera_orientation": 3,
+          "failed_hole_escape": 7,
+          "failed_stone_reacquisition": 33,
+          "mined_into_trap": 10,
+          "stuck_no_progress": 24,
+          "target_lost": 10,
+          "unnecessary_water_entry": 1
+        }
+      },
+      "ESCAPE_HOLE": {
+        "critiques": 46,
+        "label_counts": {
+          "bad_camera_orientation": 25,
+          "failed_hole_escape": 46,
+          "stuck_no_progress": 46,
+          "unnecessary_water_entry": 4
+        }
+      },
+      "AVOID_DIGGING_TRAP": {
+        "critiques": 50,
+        "label_counts": {
+          "bad_camera_orientation": 40,
+          "mined_into_trap": 50,
+          "target_lost": 11
+        }
+      },
+      "RECOVER_CAMERA": {
+        "critiques": 50,
+        "label_counts": {
+          "bad_camera_orientation": 50,
+          "failed_hole_escape": 5,
+          "failed_stone_reacquisition": 34,
+          "mined_into_trap": 12,
+          "stuck_no_progress": 29,
+          "target_lost": 3
+        }
+      },
+      "AVOID_WATER": {
+        "critiques": 45,
+        "label_counts": {
+          "bad_camera_orientation": 29,
+          "mined_into_trap": 6,
+          "stuck_no_progress": 20,
+          "target_lost": 37,
+          "unnecessary_water_entry": 34
+        }
+      }
+    }
+  },
+  "promotion": {
+    "promoted": false,
+    "stone_above_66_percent": false,
+    "improved_priority_tasks": [
+      "REACQUIRE_STONE"
+    ],
+    "normal_regression_within_2_points": false
+  }
+}

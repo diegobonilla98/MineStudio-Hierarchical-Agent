@@ -1,0 +1,75 @@
+{
+  "arm": "full",
+  "arm_name": "FULL SYSTEM",
+  "episodes_target": 24,
+  "episodes_valid": 22,
+  "infrastructure_errors": 0,
+  "successes": 0,
+  "success_rate": 0.0,
+  "milestones": {
+    "logs_obtained": {
+      "achieved": 21,
+      "rate": 0.9545454545454546,
+      "mean_steps_when_achieved": 377.8095238095238,
+      "median_steps_when_achieved": 169.0
+    },
+    "crafting_capability_established": {
+      "achieved": 21,
+      "rate": 0.9545454545454546,
+      "mean_steps_when_achieved": 864.7619047619048,
+      "median_steps_when_achieved": 628.0
+    },
+    "wooden_pickaxe": {
+      "achieved": 21,
+      "rate": 0.9545454545454546,
+      "mean_steps_when_achieved": 1450.142857142857,
+      "median_steps_when_achieved": 773.0
+    },
+    "required_cobblestone": {
+      "achieved": 21,
+      "rate": 0.9545454545454546,
+      "mean_steps_when_achieved": 2269.0,
+      "median_steps_when_achieved": 1462.0
+    },
+    "stone_pickaxe": {
+      "achieved": 15,
+      "rate": 0.6818181818181818,
+      "mean_steps_when_achieved": 5026.066666666667,
+      "median_steps_when_achieved": 4390.0
+    },
+    "furnace_available": {
+      "achieved": 11,
+      "rate": 0.5,
+      "mean_steps_when_achieved": 5211.909090909091,
+      "median_steps_when_achieved": 4594.0
+    },
+    "raw_iron_3": {
+      "achieved": 2,
+      "rate": 0.09090909090909091,
+      "mean_steps_when_achieved": 6127.0,
+      "median_steps_when_achieved": 6127.0
+    },
+    "iron_ingots_3": {
+      "achieved": 0,
+      "rate": 0.0,
+      "mean_steps_when_achieved": null,
+      "median_steps_when_achieved": null
+    },
+    "iron_pickaxe": {
+      "achieved": 0,
+      "rate": 0.0,
+      "mean_steps_when_achieved": null,
+      "median_steps_when_achieved": null
+    }
+  },
+  "mean_total_steps": 10055.09090909091,
+  "mean_elapsed_seconds": 490.9354326870909,
+  "mean_planner_replans": 29.454545454545453,
+  "mean_system0_calls": 38.90909090909091,
+  "mean_system1_calls": 18.181818181818183,
+  "mean_router_transitions": 9.590909090909092,
+  "mean_timeouts": 15.272727272727273,
+  "mean_stuck_loops": 4.454545454545454,
+  "deaths": 0,
+  "updated_at": "2026-09-22T09:19:30.959261+00:00"
+}

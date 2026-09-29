@@ -1,0 +1,245 @@
+{
+  "paired": true,
+  "checkpoint": "upper_lora_r32_step6400",
+  "splits": {
+    "normal": {
+      "old_system0_router": {
+        "episodes": 40,
+        "success_rate": 0.75,
+        "water_entry_rate": 0.175,
+        "success_given_entered_water": 0.42857142857142855,
+        "water_exit_success_rate": 0.42857142857142855,
+        "stone_reacquisition_after_water_rate": 0.14285714285714285,
+        "timeout_after_water_rate": 0.5714285714285714,
+        "pickup_tail_failures": 3,
+        "definite_pickup_tail_failures": 1,
+        "mean_router_transitions": 3.9,
+        "mean_router_transitions_success": 2.6333333333333333,
+        "mean_router_transitions_failure": 7.7,
+        "collect_attempts": 99,
+        "collect_failures": 4,
+        "collect_needs_system1": 0,
+        "primary_failure_categories": {
+          "STONE_BROKEN_NOT_COLLECTED": 3,
+          "WRONG_BLOCK_MINED": 2,
+          "NO_STONE_FOUND": 1,
+          "ENTERED_WATER": 3,
+          "TARGET_LOST": 1
+        },
+        "overlapping_failure_categories": {
+          "STONE_BROKEN_NOT_COLLECTED": 3,
+          "TARGET_LOST": 4,
+          "WRONG_BLOCK_MINED": 9,
+          "NO_PROGRESS": 10,
+          "TIMEOUT": 10,
+          "NO_STONE_FOUND": 6,
+          "ENTERED_WATER": 4,
+          "TRAPPED_IN_HOLE": 1,
+          "STUCK": 1
+        }
+      },
+      "repaired_system0_router": {
+        "episodes": 40,
+        "success_rate": 0.775,
+        "water_entry_rate": 0.175,
+        "success_given_entered_water": 0.14285714285714285,
+        "water_exit_success_rate": 0.42857142857142855,
+        "stone_reacquisition_after_water_rate": 0.14285714285714285,
+        "timeout_after_water_rate": 0.8571428571428571,
+        "pickup_tail_failures": 3,
+        "definite_pickup_tail_failures": 0,
+        "mean_router_transitions": 2.875,
+        "mean_router_transitions_success": 1.8387096774193548,
+        "mean_router_transitions_failure": 6.444444444444445,
+        "collect_attempts": 103,
+        "collect_failures": 15,
+        "collect_needs_system1": 15,
+        "primary_failure_categories": {
+          "TARGET_LOST": 2,
+          "ENTERED_WATER": 4,
+          "STONE_BROKEN_NOT_COLLECTED": 3
+        },
+        "overlapping_failure_categories": {
+          "TARGET_LOST": 4,
+          "WRONG_BLOCK_MINED": 9,
+          "NO_PROGRESS": 8,
+          "TIMEOUT": 9,
+          "ENTERED_WATER": 6,
+          "NO_STONE_FOUND": 4,
+          "STONE_BROKEN_NOT_COLLECTED": 3,
+          "TRAPPED_IN_HOLE": 1,
+          "STUCK": 1
+        }
+      },
+      "success_rate_difference": 0.025000000000000022,
+      "paired_bootstrap_95_ci": [
+        -0.15,
+        0.2
+      ],
+      "mcnemar": {
+        "old_only": 5,
+        "repaired_only": 6,
+        "discordant": 11,
+        "exact_p_value": 1.0
+      }
+    },
+    "hazard": {
+      "old_system0_router": {
+        "episodes": 60,
+        "success_rate": 0.6,
+        "water_entry_rate": 1.0,
+        "success_given_entered_water": 0.6,
+        "water_exit_success_rate": 0.9833333333333333,
+        "stone_reacquisition_after_water_rate": 0.7333333333333333,
+        "timeout_after_water_rate": 0.4,
+        "pickup_tail_failures": 5,
+        "definite_pickup_tail_failures": 2,
+        "mean_router_transitions": 9.5,
+        "mean_router_transitions_success": 6.527777777777778,
+        "mean_router_transitions_failure": 13.958333333333334,
+        "collect_attempts": 126,
+        "collect_failures": 9,
+        "collect_needs_system1": 0,
+        "primary_failure_categories": {
+          "STONE_BROKEN_NOT_COLLECTED": 5,
+          "ENTERED_WATER": 19
+        },
+        "overlapping_failure_categories": {
+          "STONE_BROKEN_NOT_COLLECTED": 5,
+          "ENTERED_WATER": 24,
+          "TARGET_LOST": 5,
+          "WRONG_BLOCK_MINED": 23,
+          "NO_PROGRESS": 20,
+          "TIMEOUT": 24,
+          "NO_STONE_FOUND": 15,
+          "TRAPPED_IN_HOLE": 8,
+          "STUCK": 11
+        }
+      },
+      "repaired_system0_router": {
+        "episodes": 60,
+        "success_rate": 0.43333333333333335,
+        "water_entry_rate": 1.0,
+        "success_given_entered_water": 0.43333333333333335,
+        "water_exit_success_rate": 0.95,
+        "stone_reacquisition_after_water_rate": 0.55,
+        "timeout_after_water_rate": 0.5666666666666667,
+        "pickup_tail_failures": 8,
+        "definite_pickup_tail_failures": 0,
+        "mean_router_transitions": 7.766666666666667,
+        "mean_router_transitions_success": 6.384615384615385,
+        "mean_router_transitions_failure": 8.823529411764707,
+        "collect_attempts": 90,
+        "collect_failures": 17,
+        "collect_needs_system1": 17,
+        "primary_failure_categories": {
+          "ENTERED_WATER": 26,
+          "STONE_BROKEN_NOT_COLLECTED": 8
+        },
+        "overlapping_failure_categories": {
+          "ENTERED_WATER": 34,
+          "WRONG_BLOCK_MINED": 32,
+          "NO_STONE_FOUND": 25,
+          "NO_PROGRESS": 31,
+          "TIMEOUT": 34,
+          "STONE_BROKEN_NOT_COLLECTED": 8,
+          "TARGET_LOST": 6,
+          "STUCK": 13,
+          "TRAPPED_IN_HOLE": 8
+        }
+      },
+      "success_rate_difference": -0.16666666666666663,
+      "paired_bootstrap_95_ci": [
+        -0.31666666666666665,
+        -0.016666666666666666
+      ],
+      "mcnemar": {
+        "old_only": 16,
+        "repaired_only": 6,
+        "discordant": 22,
+        "exact_p_value": 0.052478790283203125
+      }
+    }
+  },
+  "combined": {
+    "old_system0_router": {
+      "episodes": 100,
+      "success_rate": 0.66,
+      "water_entry_rate": 0.67,
+      "success_given_entered_water": 0.582089552238806,
+      "water_exit_success_rate": 0.9253731343283582,
+      "stone_reacquisition_after_water_rate": 0.6716417910447762,
+      "timeout_after_water_rate": 0.417910447761194,
+      "pickup_tail_failures": 8,
+      "definite_pickup_tail_failures": 3,
+      "mean_router_transitions": 7.26,
+      "mean_router_transitions_success": 4.757575757575758,
+      "mean_router_transitions_failure": 12.117647058823529,
+      "collect_attempts": 225,
+      "collect_failures": 13,
+      "collect_needs_system1": 0,
+      "primary_failure_categories": {
+        "STONE_BROKEN_NOT_COLLECTED": 8,
+        "WRONG_BLOCK_MINED": 2,
+        "NO_STONE_FOUND": 1,
+        "ENTERED_WATER": 22,
+        "TARGET_LOST": 1
+      },
+      "overlapping_failure_categories": {
+        "STONE_BROKEN_NOT_COLLECTED": 8,
+        "TARGET_LOST": 9,
+        "WRONG_BLOCK_MINED": 32,
+        "NO_PROGRESS": 30,
+        "TIMEOUT": 34,
+        "NO_STONE_FOUND": 21,
+        "ENTERED_WATER": 28,
+        "TRAPPED_IN_HOLE": 9,
+        "STUCK": 12
+      }
+    },
+    "repaired_system0_router": {
+      "episodes": 100,
+      "success_rate": 0.57,
+      "water_entry_rate": 0.67,
+      "success_given_entered_water": 0.40298507462686567,
+      "water_exit_success_rate": 0.8955223880597015,
+      "stone_reacquisition_after_water_rate": 0.5074626865671642,
+      "timeout_after_water_rate": 0.5970149253731343,
+      "pickup_tail_failures": 11,
+      "definite_pickup_tail_failures": 0,
+      "mean_router_transitions": 5.81,
+      "mean_router_transitions_success": 3.912280701754386,
+      "mean_router_transitions_failure": 8.325581395348838,
+      "collect_attempts": 193,
+      "collect_failures": 32,
+      "collect_needs_system1": 32,
+      "primary_failure_categories": {
+        "TARGET_LOST": 2,
+        "ENTERED_WATER": 30,
+        "STONE_BROKEN_NOT_COLLECTED": 11
+      },
+      "overlapping_failure_categories": {
+        "TARGET_LOST": 10,
+        "WRONG_BLOCK_MINED": 41,
+        "NO_PROGRESS": 39,
+        "TIMEOUT": 43,
+        "ENTERED_WATER": 40,
+        "NO_STONE_FOUND": 29,
+        "STONE_BROKEN_NOT_COLLECTED": 11,
+        "TRAPPED_IN_HOLE": 9,
+        "STUCK": 14
+      }
+    },
+    "success_rate_difference": -0.09000000000000008,
+    "paired_bootstrap_95_ci": [
+      -0.2,
+      0.02
+    ],
+    "mcnemar": {
+      "old_only": 21,
+      "repaired_only": 12,
+      "discordant": 33,
+      "exact_p_value": 0.16275565745308995
+    }
+  }
+}
