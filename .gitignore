@@ -188,6 +188,7 @@ output
 logs
 
 *.mp4
+!media/stone-acquisition/*.mp4
 
 # macOS
 .DS_Store

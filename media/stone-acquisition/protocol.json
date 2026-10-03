@@ -1,0 +1,93 @@
+{
+  "protocol": "Five short paired showcase rollouts; identical world seed/scenario/prompt per policy; existing checkpoints only; no training.",
+  "max_steps": 1200,
+  "deterministic_actions": false,
+  "selection_note": "One illustrative stochastic rollout per policy per scenario; not a performance estimate.",
+  "scenarios": [
+    {
+      "scenario": "natural",
+      "title": "Natural terrain",
+      "seed": 2026091501,
+      "baseline": {
+        "checkpoint": "steve_one_official",
+        "success": false,
+        "outcome": "ENTERED_WATER",
+        "steps": 1200
+      },
+      "finetuned": {
+        "checkpoint": "stone_specialist_upper_lora_r32_step6400",
+        "success": true,
+        "outcome": "SUCCESS",
+        "steps": 299
+      }
+    },
+    {
+      "scenario": "exposed_near",
+      "title": "Nearby exposed stone",
+      "seed": 2026107339,
+      "baseline": {
+        "checkpoint": "steve_one_official",
+        "success": true,
+        "outcome": "SUCCESS",
+        "steps": 413
+      },
+      "finetuned": {
+        "checkpoint": "stone_specialist_upper_lora_r32_step6400",
+        "success": false,
+        "outcome": "TARGET_LOST",
+        "steps": 1200
+      }
+    },
+    {
+      "scenario": "water_near_stone",
+      "title": "Water between player and stone",
+      "seed": 2026099420,
+      "baseline": {
+        "checkpoint": "steve_one_official",
+        "success": false,
+        "outcome": "STONE_BROKEN_NOT_COLLECTED",
+        "steps": 1200
+      },
+      "finetuned": {
+        "checkpoint": "stone_specialist_upper_lora_r32_step6400",
+        "success": false,
+        "outcome": "STONE_BROKEN_NOT_COLLECTED",
+        "steps": 1200
+      }
+    },
+    {
+      "scenario": "stone_slope",
+      "title": "Constructed stone slope",
+      "seed": 2026162772,
+      "baseline": {
+        "checkpoint": "steve_one_official",
+        "success": true,
+        "outcome": "SUCCESS",
+        "steps": 302
+      },
+      "finetuned": {
+        "checkpoint": "stone_specialist_upper_lora_r32_step6400",
+        "success": true,
+        "outcome": "SUCCESS",
+        "steps": 211
+      }
+    },
+    {
+      "scenario": "vegetation_occluded",
+      "title": "Vegetation occlusion",
+      "seed": 2026297395,
+      "baseline": {
+        "checkpoint": "steve_one_official",
+        "success": true,
+        "outcome": "SUCCESS",
+        "steps": 354
+      },
+      "finetuned": {
+        "checkpoint": "stone_specialist_upper_lora_r32_step6400",
+        "success": true,
+        "outcome": "SUCCESS",
+        "steps": 433
+      }
+    }
+  ]
+}

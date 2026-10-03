@@ -23,6 +23,26 @@ In a paired 100-episode screen of the combined normal and hazard conditions, the
 
 ![Paired stone-acquisition policy screen across normal and hazard conditions](paper/figures/behavioral_screen.png)
 
+### Watch the policies
+
+These paired, fast-forwarded POV clips use the same world seed and scenario for both policies. The selected checkpoint is `upper_lora_r32_step6400`; each run gets the goal “obtain 3 cobblestone.” Actions are sampled, so each pair is one illustrative rollout. In the natural-terrain example, the baseline enters water and misses the goal by step 1,200; the fine-tuned policy succeeds in 299 steps. In the exposed-near example, the baseline succeeds in 413 steps while the fine-tuned policy loses the target and times out at 1,200. Both policies also miss the goal in the water-near-stone example. The five clips are curated illustrations, not a performance estimate; the paired 100-episode screen above is the statistical comparison.
+
+[![Natural-terrain rollout: baseline and fine-tuned policy](media/stone-acquisition/paired-natural.gif)](media/stone-acquisition/paired-natural.mp4)
+
+[![Five matched-seed rollout outcomes](media/stone-acquisition/paired-rollouts-overview.png)](media/stone-acquisition/protocol.json)
+
+[Natural-terrain MP4](media/stone-acquisition/paired-natural.mp4) · [Run seeds, checkpoints, and full outcomes](media/stone-acquisition/protocol.json)
+
+| Scenario | Baseline STEVE-1 | Fine-tuned LoRA r32/6400 | Clip |
+| --- | --- | --- | --- |
+| Natural terrain | `ENTERED_WATER` · 1,200 steps | `SUCCESS` · 299 steps | [Watch GIF](media/stone-acquisition/paired-natural.gif) |
+| Nearby exposed stone | `SUCCESS` · 413 steps | `TARGET_LOST` · 1,200 steps | [Watch GIF](media/stone-acquisition/paired-exposed_near.gif) |
+| Water between player and stone | `STONE_BROKEN_NOT_COLLECTED` · 1,200 steps | `STONE_BROKEN_NOT_COLLECTED` · 1,200 steps | [Watch GIF](media/stone-acquisition/paired-water_near_stone.gif) |
+| Constructed stone slope | `SUCCESS` · 302 steps | `SUCCESS` · 211 steps | [Watch GIF](media/stone-acquisition/paired-stone_slope.gif) |
+| Vegetation occlusion | `SUCCESS` · 354 steps | `SUCCESS` · 433 steps | [Watch GIF](media/stone-acquisition/paired-vegetation_occluded.gif) |
+
+Individual natural-terrain clips: [baseline STEVE-1](media/stone-acquisition/natural-baseline.gif) · [fine-tuned policy](media/stone-acquisition/natural-finetuned.gif).
+
 ### Follow-up attempts
 
 - A System 0 router/pickup ablation did not improve on the 66% reference in its paired 100-episode comparison; the tested replacement reached 57% (95% interval for the difference: −20 to +2 points).
